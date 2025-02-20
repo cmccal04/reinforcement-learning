@@ -1,0 +1,24 @@
+Reinforcement Learning: Assignment 1
+README - bandit.py
+Cullen McCaleb
+02/14/2025
+
+Overview:
+- bandit.py is a python file that simulates an n-armed bandit problem in a 
+  non-stationary environment.
+- The environment is implemented  with an adjustable sigma_walk, or standard 
+  deviation, that is 0.01 by default. 
+- This program uses both sample-average and constant step-size action value 
+  methods, and an epsilon-greedy action selection method to solve the bandit-problem. 
+  The epsilons used are 0, 0.1, and 0.01. The alpha for the constant step size 
+  method is 0.1 by default.
+- This bandit problem can run on any number of independent runs, which is 3,000 by 
+  default. The number of time steps per run is also adjustable, and 10,000 by default.
+- This program plots 3 different graphs: average reward vs. time, % optimal action 
+  vs. time, and % action switch vs. time.
+
+How to Run:
+- python3, numpy, and matplotlib must be installed
+- run command python3 bandit.py
+ 
+
